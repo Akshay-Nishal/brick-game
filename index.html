@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+  <title>Brick Game</title>
+  <style >
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: "Indie Flower", cursive;
+        font-weight: 400;
+        font-style: normal;
+        
+    }
+    body{
+        overflow-y: hidden; 
+        overflow-x: hidden;
+        background: #303030; 
+
+    }
+    canvas { 
+        background: #303030; 
+        /* padding-bottom: 30px; */
+        width: 100vw; /* 100% of the viewport width */
+        max-width: 100%; /* Ensures it doesn’t overflow */
+        height: calc(100vh - px);
+        max-height: 100%;
+        /* margin-bottom: 25px; */
+    }
+  </style>
+</head>
+<body>  
+    <canvas id="myCanvas"></canvas>
+    <script src="game.js"></script>
+</body>
+</html>

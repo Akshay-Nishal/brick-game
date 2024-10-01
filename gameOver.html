@@ -1,0 +1,75 @@
+<!-- gameover.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Over</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Indie Flower", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+        body {
+            overflow-y: hidden; 
+            overflow-x: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            max-height: 100%;
+            padding-top: 50px;
+            background-color: #333;
+            color: #DAA520;
+            font-family: Arial, sans-serif;
+        }
+        h1{
+            font-size: 50px;
+            font-weight: 600;
+        }
+        p{
+            font-size: 30px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            margin-top: 20px;
+            border-radius: 25px;
+            border: 0px;
+            cursor: pointer;
+            color: #DAA520;
+            background-color: black;
+        }
+        img{
+            height: 250px;
+            border-radius: 20px;
+        }
+        .footer {
+            position: fixed;
+            bottom: 10px; /* Adjust the distance from the bottom */
+            right: 10px; /* Adjust the distance from the right */
+            color: #DAA520; /* Footer text color */
+            font-size: 20px; /* Font size */
+            z-index: 1000; /* Ensure the footer is above other content */
+        }
+    </style>
+</head>
+<body>
+    <h1>Game Over 😵‍💫</h1>
+    <img src="./fail.jpg" alt="">
+    <p>Better luck next time!!!</p>
+    <button onclick="goBack()">Play Again</button>
+    <div class="footer">
+        For Sara 💝
+    </div>
+    <script>
+        function goBack() {
+            window.location.href = "index.html"; // Replace with the name of your game HTML file
+        }
+    </script>
+</body>
+</html>
