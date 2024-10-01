@@ -98,7 +98,7 @@ function collisionDetection() {
           b.status = 0; // Brick is hit
           score++;
           if (score == brickRowCount * brickColumnCount) {
-            window.location.href = "gameOver.html";
+            window.location.href = "win.html";
           }
         }
       }
